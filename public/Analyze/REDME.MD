@@ -30,17 +30,10 @@
 -  Product Details 
 - Add to card 
 - Description 
-- Additional Information 
+- Additional Informat   ion 
  - Reviews, Add Review
 
 
  ### Reservation
  - Reservation Form 
-
-
-```bash 
-pnpm dlx shadcn-ui@latest add alert-dialog  button  carousel  checkbox  dialog  drawer  dropdown-menu  hover-card input  label menubar  pagination  popover  radio-group  resizable select   sheet skeleton  switch  table   tabs  textarea tooltip  
-
-```
-
 
