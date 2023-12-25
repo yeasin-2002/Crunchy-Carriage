@@ -6,10 +6,10 @@ Crunchy Carriage is a restaurant and Food delivery service. It is a web applicat
 
 #### Technologies
 
-    - next.js 14
-    - zustand
-    - react-query
-    - react-hook-form
+- next.js 14
+- zustand
+- react-query
+- react-hook-form
 
 ##### Features
 
