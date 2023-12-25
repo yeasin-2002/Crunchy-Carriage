@@ -1,6 +1,7 @@
-import { Menu } from "@/icons";
 import { ShoppingBasket } from "lucide-react";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+
+import { FoodContact, NavMenu } from "../drawers";
 import { Logo } from "./Logo";
 
 interface NavProps
@@ -8,9 +9,9 @@ interface NavProps
 
 export const Nav = ({ ...rest }: NavProps) => {
   return (
-    <div {...rest} className="flex justify-between py-3 bg-snowfall">
-      <div className="flex justify-between items-center gap-x-2 px-4">
-        <Menu className="  " />
+    <div {...rest} className="flex justify-between py-3 bg-snowfall px-4">
+      <div className="flex justify-between items-center gap-x-2 ">
+        <NavMenu />
         <Logo className="w-20 h-20" />
       </div>
       <div className="flex items-center   ">
@@ -18,6 +19,7 @@ export const Nav = ({ ...rest }: NavProps) => {
         <button className="btn-green">
           <ShoppingBasket className="w-6 h-6" />
         </button>
+        <FoodContact />
       </div>
     </div>
   );
