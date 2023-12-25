@@ -1,9 +1,9 @@
-import { VideoIntro } from "@/components/Advertisement";
+import { RenderProduct_temp } from "./_home";
 
 const Home = () => {
   return (
     <div>
-      <VideoIntro />
+      <RenderProduct_temp />
     </div>
   );
 };

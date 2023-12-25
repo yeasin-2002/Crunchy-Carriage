@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 
-
-import { Nav } from "@/components/global/Nav";
+import { Footer, Nav } from "@/components/global";
 import { Provider } from "@/components/global/provider";
 import { inter } from "@/fonts";
 import "@/styles/globals.css";
-
-
 export const metadata: Metadata = {
   title: "Crunchy Carriage",
   description:
@@ -26,6 +23,7 @@ export default function RootLayout({
         <Provider>
           <Nav />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>
