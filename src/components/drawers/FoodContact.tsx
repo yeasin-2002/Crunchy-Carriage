@@ -14,12 +14,12 @@ import {
   SheetTrigger,
 } from "@/ui";
 
-import food0 from "@/assets/covers/alex-munsell-auIbTAcSH6E-unsplash.jpg";
-import food1 from "@/assets/covers/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg";
-import food3 from "@/assets/covers/chad-montano--GFCYhoRe48-unsplash.jpg";
-import food4 from "@/assets/covers/egg-fry.jpg";
-import food5 from "@/assets/covers/emy-XoByiBymX20-unsplash.jpg";
-import food2 from "@/assets/covers/victoria-shes-8OpyEpJVgiQ-unsplash.jpg";
+import food1 from "@/assets/covers/burger/mae-mu-I7A_pHLcQK8-unsplash.jpg";
+import food4 from "@/assets/covers/drink/victoria-shes-8OpyEpJVgiQ-unsplash.jpg";
+import food5 from "@/assets/covers/light-snacks/gallery-4.jpg";
+import food2 from "@/assets/covers/meat/alex-munsell-auIbTAcSH6E-unsplash.jpg";
+import food0 from "@/assets/covers/pizza/gallery-5.jpg";
+import food3 from "@/assets/covers/sweet/luisana-zerpa.jpg";
 
 interface FoodContactProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}

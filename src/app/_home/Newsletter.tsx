@@ -11,11 +11,9 @@ interface NewsletterProps
 export const Newsletter = ({ ...rest }: NewsletterProps) => {
   return (
     <section className="bg-snowfall mt-4 py-10" {...rest}>
-      <TextMarquee text="NEWSLETTER" className="my-10" />
+      <TextMarquee text="SUBSCRIBE" className="my-10" />
       <div className="flex flex-col items-center justify-center gap-y-4  ">
-        <h3
-          className={`text-5xl font-extrabold text-center    text-gray-dark ${barlowCondensed.className}`}
-        >
+        <h3 className={`title    text-gray-dark ${barlowCondensed.className}`}>
           JOIN FOR HOT OFFERS
         </h3>
         <p

@@ -1,9 +1,9 @@
-import { Newsletter } from "./_home";
+import { VideoIntro } from "@/components/Advertisement";
 
 const Home = () => {
   return (
     <div>
-      <Newsletter />
+      <VideoIntro />
     </div>
   );
 };
