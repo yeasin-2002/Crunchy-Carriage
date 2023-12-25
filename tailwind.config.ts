@@ -22,6 +22,7 @@ const config = {
         snowfall: `#f5f0ea`,
         gold: "f2a735",
         crimson: "#c23131",
+        "gray-dark": "#212121",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -7,6 +7,7 @@ export * from "./dialog";
 export * from "./drawer";
 export * from "./dropdown-menu";
 export * from "./hover-card";
+export * from "./input";
 export * from "./menubar";
 export * from "./pagination";
 export * from "./radio-group";
@@ -19,3 +20,5 @@ export * from "./table";
 export * from "./tabs";
 export * from "./textarea";
 export * from "./tooltip";
+export * from "./checkbox";
+

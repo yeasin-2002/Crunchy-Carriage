@@ -1,7 +1,6 @@
-import { ShoppingBasket } from "lucide-react";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-import { FoodContact, NavMenu } from "../drawers";
+import { FoodContact, NavMenu, WishListItemBox } from "../drawers";
 import { Logo } from "./Logo";
 
 interface NavProps
@@ -16,9 +15,7 @@ export const Nav = ({ ...rest }: NavProps) => {
       </div>
       <div className="flex items-center   ">
         <button className="btn-red">Order now</button>
-        <button className="btn-green">
-          <ShoppingBasket className="w-6 h-6" />
-        </button>
+        <WishListItemBox />
         <FoodContact />
       </div>
     </div>

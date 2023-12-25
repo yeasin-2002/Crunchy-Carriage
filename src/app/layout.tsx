@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; 
+
 
 import { Nav } from "@/components/global/Nav";
 import { Provider } from "@/components/global/provider";
+import { inter } from "@/fonts";
 import "@/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Crunchy Carriage",
   description:
