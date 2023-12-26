@@ -8,6 +8,7 @@ interface Props
   imgSrc: StaticImageData;
   wrapperClassName?: string;
   className?: string;
+  blurValue?: number;
 }
 
 export const Blurry = ({
@@ -15,23 +16,24 @@ export const Blurry = ({
   imgSrc,
   wrapperClassName,
   className,
+  blurValue = 2,
   ...rest
 }: Props) => {
   return (
     <div
       {...rest}
       className={cn(
-        "w-full   bg-no-repeat bg-cover bg-center  min-h-[35rem] into-center relative",
+        "w-full   bg-no-repeat bg-cover bg-center   into-center relative",
         wrapperClassName
       )}
       style={{ backgroundImage: `url(${imgSrc.src})` }}
     >
       <div
+        style={{ backdropFilter: `blur(${blurValue}px)` }}
         className={cn(
           "absolute inset-0 bg-black bg-opacity-50 w-full h-full",
           className
         )}
-        style={{ backdropFilter: "blur(2px)" }}
       >
         {children}
       </div>

@@ -3,22 +3,22 @@ import { HomeIcon } from "lucide-react";
 export const navItem = [
   {
     name: "Home",
-    path: "",
+    path: "/",
     Icon: <HomeIcon />,
   },
   {
     name: "Menu",
-    path: "",
+    path: "/menu",
     Icon: <HomeIcon />,
   },
   {
     name: "Contact us",
-    path: "",
+    path: "/contact-us",
     Icon: <HomeIcon />,
   },
   {
     name: "Shop",
-    path: "",
+    path: "/shop",
     Icon: <HomeIcon />,
   },
 ];

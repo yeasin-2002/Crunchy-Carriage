@@ -21,6 +21,10 @@
   .footer-mini-title {
     @apply text-lg font-medium
   }
+
+  .accordion-title {
+    @apply text-2xl font-extrabold text-slate-900 border-b-2 border-gray-900/70 
+  }
 }
 
 @layer base {
