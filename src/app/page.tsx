@@ -1,17 +1,18 @@
 import {
   AboutTheFood,
+  ItemShowcase,
   TodaysMeals,
-  VideoIntro,
 } from "@/components/Advertisement";
-import { BestSellingDishes, Newsletter } from "./_home";
+import { BestSellingDishes, Hero, Newsletter } from "./_home";
 
 const Home = () => {
   return (
     <div>
+      <Hero />
       <AboutTheFood />
+      <ItemShowcase />
       <BestSellingDishes />
       <TodaysMeals />
-      <VideoIntro />
       <Newsletter />
     </div>
   );

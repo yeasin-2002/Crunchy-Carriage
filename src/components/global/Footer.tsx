@@ -65,7 +65,7 @@ export const Footer = ({ ...rest }: FooterProps) => {
             {contactInfo.map((info) => {
               return (
                 <Link
-                key={info.name}
+                  key={info.name}
                   href={info.value}
                   className="p-1 rounded-full bg-slate-200 border border-slate-800 *:size-5 "
                 >
@@ -76,15 +76,12 @@ export const Footer = ({ ...rest }: FooterProps) => {
           </div>
         </div>
       </div>
-      <div className="mt-10 ">
-        <p className="text-center">
-          Copyright ©{year}
-          <span className="text-red-600 mx-1 font-medium ">
-            Crunchy Carriage
-          </span>
-          <br /> All rights reserved
-        </p>
-      </div>
+
+      <p className="text-center mt-10 border-t-2 border-gray-500/40 py-2">
+        Copyright ©{year}
+        <span className="text-red-600 mx-1 font-medium ">Crunchy Carriage</span>
+        <br /> All rights reserved
+      </p>
     </footer>
   );
 };

@@ -14,7 +14,7 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
       <div className="flex justify-center flex-col items-center h-full w-full min-h-[35rem] bg-snowfall  text-gray-60 *:z-10 ">
         <h4
           className={cn(
-            "text-6xl font-extralight  text-center ",
+            "text-6xl font-extralight  text-center text-gray-800 ",
             barlowCondensed.className
           )}
         >
