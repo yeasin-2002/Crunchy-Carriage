@@ -16,7 +16,7 @@ export const ShopFilters = ({ ...rest }: Props) => {
   return (
     <div {...rest}>
       <Accordion type="multiple">
-        <AccordionItem value="category">
+        <AccordionItem value="category" defaultChecked>
           <AccordionTrigger
             className={cn("accordion-title ", barlowCondensed.className)}
           >
@@ -26,6 +26,7 @@ export const ShopFilters = ({ ...rest }: Props) => {
             {allCategories.map((c) => {
               return (
                 <p
+                  key={c.title + c.url}
                   className={cn(
                     "text-xl font-semibold text-gray-700cursor-pointer my-2",
                     barlowCondensedLight.className

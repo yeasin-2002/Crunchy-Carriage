@@ -43,7 +43,10 @@ export const Footer = ({ ...rest }: FooterProps) => {
               <div>
                 {navItem.map((item) => {
                   return (
-                    <p className="footer-mini-title   uppercase ">
+                    <p
+                      key={item.name}
+                      className="footer-mini-title   uppercase "
+                    >
                       {item.name}
                     </p>
                   );

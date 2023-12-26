@@ -25,6 +25,10 @@
   .accordion-title {
     @apply text-2xl font-extrabold text-slate-900 border-b-2 border-gray-900/70 
   }
+
+  .input-area {
+    @apply w-full py-3 px-2 rounded-lg bg-snowfall outline-none border border-gray-600/50
+  }
 }
 
 @layer base {

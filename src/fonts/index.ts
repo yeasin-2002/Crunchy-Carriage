@@ -6,7 +6,13 @@ export const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   weight: "800",
 });
+
 export const barlowCondensedLight = Barlow_Condensed({
   subsets: ["latin"],
   weight: "400",
+});
+
+export const barlowCondensedMedium = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: "600",
 });

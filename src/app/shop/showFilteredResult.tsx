@@ -56,7 +56,11 @@ export const ShowFilteredResult = ({ ...rest }: Props) => {
             </SelectTrigger>
             <SelectContent>
               {sortItem.map((val) => {
-                return <SelectItem value={val.value}>{val.label} </SelectItem>;
+                return (
+                  <SelectItem key={val.value} value={val.value}>
+                    {val.label}{" "}
+                  </SelectItem>
+                );
               })}
             </SelectContent>
           </Select>
