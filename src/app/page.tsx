@@ -1,9 +1,7 @@
-import { RenderProduct_temp } from "./_home";
-
 const Home = () => {
   return (
     <div>
-      <RenderProduct_temp />
+      <h1>Home</h1>
     </div>
   );
 };
