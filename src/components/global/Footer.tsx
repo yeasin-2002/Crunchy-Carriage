@@ -11,7 +11,10 @@ interface FooterProps
 export const Footer = ({ ...rest }: FooterProps) => {
   const year = new Date().getFullYear();
   return (
-    <footer {...rest} className={cn("p-4", barlowCondensedLight.className)}>
+    <footer
+      {...rest}
+      className={cn("p-4 bg-snowfall", barlowCondensedLight.className)}
+    >
       <div className="flex  flex-col md:flex-row        items-start">
         <div className=" flex flex-col sm:flex-row  sm:gap-x-5    md:gap-x-1 flex-1 ">
           <div>
@@ -27,7 +30,11 @@ export const Footer = ({ ...rest }: FooterProps) => {
               <p className="footer-subtitle">Product</p>
               <div className="grid grid-cols-2 ">
                 {CategoryItem.map((item) => {
-                  return <p className="footer-mini-title">{item.title}</p>;
+                  return (
+                    <p key={item.title} className="footer-mini-title">
+                      {item.title}
+                    </p>
+                  );
                 })}
               </div>
             </div>
@@ -35,7 +42,11 @@ export const Footer = ({ ...rest }: FooterProps) => {
               <p className="footer-subtitle">QUICK LINKS</p>
               <div>
                 {navItem.map((item) => {
-                  return <p className="footer-mini-title">{item.name}</p>;
+                  return (
+                    <p className="footer-mini-title   uppercase ">
+                      {item.name}
+                    </p>
+                  );
                 })}
               </div>
             </div>
@@ -54,9 +65,9 @@ export const Footer = ({ ...rest }: FooterProps) => {
             {contactInfo.map((info) => {
               return (
                 <Link
+                key={info.name}
                   href={info.value}
-                  className="p-1 rounded-full bg-slate-200 border border-slate-800 "
-                  key={info.name}
+                  className="p-1 rounded-full bg-slate-200 border border-slate-800 *:size-5 "
                 >
                   {info.Icon}
                 </Link>

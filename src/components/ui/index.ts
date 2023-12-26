@@ -21,4 +21,5 @@ export * from "./tabs";
 export * from "./textarea";
 export * from "./tooltip";
 export * from "./checkbox";
+export * from "./label";
 

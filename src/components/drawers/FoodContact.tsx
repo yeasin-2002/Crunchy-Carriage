@@ -58,7 +58,7 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
             <div className="mt-10 ">
               <div className="flex items-center gap-x-1 mb-3">
                 {contactInfo.map((item) => {
-                  return <Fragment>{item.Icon}</Fragment>;
+                  return <Fragment key={item.name}>{item.Icon}</Fragment>;
                 })}
               </div>
 

@@ -35,7 +35,11 @@ export const NavMenu = ({ ...rest }: NavMenuProps) => {
             <TabsContent value="menu">
               <div className="flex flex-col gap-y-4 mt-10">
                 {navItem.map((item) => {
-                  return <Link href={item.path}>{item.name}</Link>;
+                  return (
+                    <Link key={item.name} href={item.path}>
+                      {item.name}
+                    </Link>
+                  );
                 })}
               </div>
             </TabsContent>

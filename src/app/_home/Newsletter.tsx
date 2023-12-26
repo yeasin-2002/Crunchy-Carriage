@@ -1,16 +1,16 @@
 import { Send } from "lucide-react";
-import { DetailedHTMLProps, Fragment, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 import { TextMarquee } from "@/components";
 import { barlowCondensed, barlowCondensedLight } from "@/fonts";
-import { Checkbox, Input } from "@/ui";
+import { Checkbox, Input, Label } from "@/ui";
 
 interface NewsletterProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Newsletter = ({ ...rest }: NewsletterProps) => {
   return (
-    <section className="bg-snowfall mt-4 py-10" {...rest}>
+    <section className="bg-snowfall  py-10" {...rest}>
       <TextMarquee text="SUBSCRIBE" className="my-10" />
       <div className="flex flex-col items-center justify-center gap-y-4  ">
         <h3 className={`title    text-gray-dark ${barlowCondensed.className}`}>
@@ -37,12 +37,13 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
             </button>
           </div>
           <div className="flex gap-x-2 items-center">
-            <Checkbox />
-            <p
+            <Checkbox id="newsletter" />
+            <Label
+              htmlFor="newsletter"
               className={`  text-gray-600    ${barlowCondensedLight.className}`}
             >
               By signing up you agree to our Privacy Policy
-            </p>
+            </Label>
           </div>
         </div>
       </div>

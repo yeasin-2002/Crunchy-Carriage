@@ -11,7 +11,7 @@ interface AboutTheFoodProps
 export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
   return (
     <div {...rest} className="relative">
-      <div className="flex justify-center flex-col items-center h-full w-full min-h-[35rem] bg-snowfall  my-2  text-gray-60 *:z-10 ">
+      <div className="flex justify-center flex-col items-center h-full w-full min-h-[35rem] bg-snowfall  text-gray-60 *:z-10 ">
         <h4
           className={cn(
             "text-6xl font-extralight  text-center ",
