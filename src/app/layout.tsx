@@ -4,6 +4,8 @@ import { Footer, Nav } from "@/components/global";
 import { Provider } from "@/components/global/provider";
 import { inter } from "@/fonts";
 import "@/styles/globals.css";
+import React from "react";
+
 export const metadata: Metadata = {
   title: "Crunchy Carriage",
   description:

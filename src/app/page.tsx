@@ -3,12 +3,18 @@ import {
   ItemShowcase,
   TodaysMeals,
 } from "@/components/Advertisement";
-import { BestSellingDishes, Hero, Newsletter } from "./_home";
+import {
+  BestSellingDishes,
+  Hero,
+  Newsletter,
+  ShowAwesomeProduct,
+} from "./_home";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-snowfall min-h-screen">
       <Hero />
+      <ShowAwesomeProduct />
       <AboutTheFood />
       <ItemShowcase />
       <BestSellingDishes />

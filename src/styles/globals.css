@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer components {
   .title {
     @apply text-5xl font-extrabold text-center;
@@ -104,8 +107,21 @@
   }
 }
 
+/* Custom CSS Class  */
+
 .marqueeTextFillColor {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #b7b7b7;
+}
+
+
+.stack-content > * {
+  grid-area: container;
+}
+
+.stack-content {
+  display: grid;
+  grid-template: 'container';
+  isolation: isolate;
 }

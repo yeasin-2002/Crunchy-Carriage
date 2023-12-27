@@ -6,7 +6,7 @@ import { type ThemeProviderProps } from "next-themes/dist/types";
 import * as React from "react";
 
 export function Provider({ children, ...props }: ThemeProviderProps) {
-  const queryClient = new QueryClient();
+  const [queryClient] = React.useState(() => new QueryClient());
 
   return (
     <React.Fragment>

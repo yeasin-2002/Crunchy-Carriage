@@ -18,6 +18,6 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [],
-  "ignoreWords": [],
+  "ignoreWords": ["Swiper", "commitlint"],
   "import": []
 }

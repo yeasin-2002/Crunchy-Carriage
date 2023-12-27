@@ -1,4 +1,3 @@
-import { cn } from "@/utils";
 import Image, { StaticImageData } from "next/image";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 

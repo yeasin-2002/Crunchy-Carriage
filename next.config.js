@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
-const withVideos = require('next-videos')
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["demo2.wpopal.com"],
+  },
+};
 
-module.exports = nextConfig
-module.exports = withVideos()
+module.exports = nextConfig;
+
 
 

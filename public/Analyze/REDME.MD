@@ -1,7 +1,7 @@
 ## UI Ideas
- - [ ] [1 ](https://preview.themeforest.net/item/fazfood-fast-food-restaurant-wordpress-theme/full_screen_preview/49172959)
 
-- [ ] [2 ](https://preview.themeforest.net/item/pizzetta-pizza-restaurant-cafe-wordpress-theme/full_screen_preview/19209143)
+ [ FazFood ](https://demo2.wpopal.com/fazfood/)
+    
 
 
 ### Global Sections
