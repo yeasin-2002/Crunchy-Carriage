@@ -30,8 +30,10 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
         <SheetContent>
           <div className="flex flex-col justify-between h-full w-full">
             <div className="space-y-4">
-              <h3>WE MAKE THE BEST BURGER IN YOUR TOWN</h3>
-              <p>
+              <h3 className="2xl:text-2xl text-base lg:text-lg  font-bold text-center">
+                WE MAKE THE BEST BURGER IN YOUR TOWN
+              </h3>
+              <p className="2xl:text-xl font-medium">
                 The mouth-watering aroma of sizzling burgers now fills the
                 streets of Birmingham thanks to the passionate pursuit of three
                 brothers
@@ -44,7 +46,7 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
                     key={i}
                     src={url}
                     alt="Food Image"
-                    className="rounded-lg w-full  bg-cover aspect-square "
+                    className="rounded-lg w-full  bg-cover aspect-square  "
                   />
                 );
               })}
@@ -56,8 +58,10 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
                 })}
               </div>
 
-              <p>Copyright © {year} Crunchy Carriage.</p>
-              <p> All rights reserved</p>
+              <p className="2xl:text-lg">
+                Copyright © {year} Crunchy Carriage.
+              </p>
+              <p className="2xl:text-lg"> All rights reserved</p>
             </div>
           </div>
         </SheetContent>

@@ -17,7 +17,7 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
           JOIN FOR HOT OFFERS
         </h3>
         <p
-          className={`text-center text-gray-500 mt-2 ${barlowCondensedLight.className}`}
+          className={`text-center 2xl:text-3xl text-gray-500 mt-2 ${barlowCondensedLight.className}`}
         >
           If we go all out… We do it well! Subscribe to the newsletter
           <br />
@@ -27,7 +27,7 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
         <div className="space-y-3 mt-10">
           <div className="flex gap-x-2 justify-center items-center  ">
             <Input
-              className="w-full  min-w-96 py-6 "
+              className="w-full  md:min-w-96 py-6 "
               type="email"
               placeholder="Enter your email"
             />
@@ -37,10 +37,10 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
             </button>
           </div>
           <div className="flex gap-x-2 items-center">
-            <Checkbox id="newsletter" />
+            <Checkbox id="newsletter" className="2xl:p-4" />
             <Label
               htmlFor="newsletter"
-              className={`  text-gray-600 cursor-pointer    ${barlowCondensedLight.className}`}
+              className={`  text-gray-600 cursor-pointer  2xl:text-3xl   ${barlowCondensedLight.className}`}
             >
               By signing up you agree to our Privacy Policy
             </Label>

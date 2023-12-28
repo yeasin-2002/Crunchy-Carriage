@@ -1,8 +1,9 @@
-import mrBurger from "@/assets/covers/banner/mr-burger.jpg";
-import maze from "@/assets/illustration/maze.png";
 import { barlowCondensedLight } from "@/fonts";
 import { cn } from "@/utils";
 import Image from "next/image";
+
+import mrBurger from "@/assets/covers/banner/mr-burger.jpg";
+import maze from "@/assets/illustration/maze.png";
 
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
@@ -15,16 +16,18 @@ export const BurgerOfTheMonth = ({ ...rest }: Props) => {
       <div
         style={{ backgroundImage: `url(${maze.src})` }}
         className={
-          "bg-no-repeat bg-cover bg-center w-full h-full p-8 rounded-l-md bg-black"
+          "bg-no-repeat bg-cover bg-center w-full h-full p-8 2xl:p-20 rounded-l-md bg-black "
         }
       >
-        <p className="text-xl font-bold text-red-600  pt-20">THE MENU</p>
-        <h4 className={"text-4xl font-bold text-gray-50  pt-20"}>
+        <p className="text-xl font-bold text-red-600  2xl:text-2xl pt-20">
+          THE MENU
+        </p>
+        <h4 className={"text-4xl font-bold text-gray-50 2xl:text-5xl  pt-20"}>
           BURGER OF THE MONTH
         </h4>
         <p
           className={cn(
-            " text-lg font-medium text-gray-200 ",
+            " text-lg font-medium text-gray-200 2xl:text-2xl ",
             barlowCondensedLight.className
           )}
         >
@@ -33,6 +36,7 @@ export const BurgerOfTheMonth = ({ ...rest }: Props) => {
         </p>
         <button className="btn-green py-4 mt-6">Check it now</button>
       </div>
+
       <Image
         src={mrBurger.src}
         width={1000}

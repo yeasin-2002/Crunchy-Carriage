@@ -1,9 +1,7 @@
-import cover from "@/assets/covers/add1_cover.jpg";
 import starImg from "@/assets/covers/banner/smoke.jpg";
 import burgerImg from "@/assets/covers/burger/bugerOnHand.jpg";
 import { Blurry } from "@/components";
 
-import Image from "next/image";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface HeroProps

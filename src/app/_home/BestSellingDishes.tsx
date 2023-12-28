@@ -25,7 +25,22 @@ export const BestSellingDishes = ({ ...rest }: BestSellingDishesProps) => {
         BEST SELLING DISHES
       </h2>
 
-      <Swiper className="mySwiper mt-10" spaceBetween={20} slidesPerView={4}>
+      <Swiper
+        className="mySwiper mt-10"
+        spaceBetween={5}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
+      >
         {arr.map((_, i) => {
           return (
             <SwiperSlide key={i}>

@@ -20,19 +20,20 @@ export const TodaysMeals = ({ ...rest }: TodaysMealsProps) => {
     >
       <h4
         className={cn(
-          "text-6xl font-extralight  text-center text-gray-50",
+          "text-6xl font-extrabold  2xl:text-7xl text-center text-gray-50",
           barlowCondensed.className
         )}
       >
-        TODAY'S A <br /> STACKIN' DAY
+        {"TODAY'S "}A <br /> {"STACKIN' "}DAY
       </h4>
       <p
         className={cn(
-          "my-9 text-2xl text-center",
+          "my-9  text-2xl 2xl:text-4xl text-center",
           barlowCondensedLight.className
         )}
       >
-        *Additional charge for premium toppings. Minimum of 2 required.
+        *Additional charge for premium toppings.{" "}
+        <br className="hidden 2xl:block" /> Minimum of 2 required.
       </p>
 
       <button className="btn-green my-10">SHOP NOW</button>

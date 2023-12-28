@@ -7,7 +7,7 @@
 
 @layer components {
   .title {
-    @apply text-5xl font-extrabold text-center;
+    @apply text-5xl 2xl:text-8xl  font-extrabold text-center;
   }
   .into-center {
     @apply flex items-center justify-center;
