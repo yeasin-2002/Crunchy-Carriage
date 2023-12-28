@@ -4,17 +4,18 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 import burgerImg from "@/assets/illustration/burger.png";
 import chickenFry from "@/assets/products/chickenFry.png";
+import Image from "next/image";
 
 interface AboutTheFoodProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
   return (
-    <div {...rest} className="relative">
+    <div {...rest} className="relative py-10">
       <div className="flex justify-center flex-col items-center h-full w-full min-h-[35rem] bg-snowfall  text-gray-60 *:z-10 ">
         <h4
           className={cn(
-            "text-6xl font-extralight  text-center text-gray-800 ",
+            "text-6xl font-semibold  text-center text-black/90 ",
             barlowCondensed.className
           )}
         >
@@ -35,13 +36,17 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
         </p>
         <button className="btn-green my-10">SHOP NOW</button>
       </div>
-      <img
+      <Image
         src={chickenFry.src}
+        width={100}
+        height={100}
         alt="chicken fry"
         className="absolute bottom-0 left-0-0 z-0  size-80"
       />
-      <img
+      <Image
         src={burgerImg.src}
+        width={100}
+        height={100}
         alt="chicken fry"
         className="absolute bottom-10 right-10 z-0  size-32"
       />

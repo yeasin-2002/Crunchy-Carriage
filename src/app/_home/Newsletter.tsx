@@ -40,7 +40,7 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
             <Checkbox id="newsletter" />
             <Label
               htmlFor="newsletter"
-              className={`  text-gray-600    ${barlowCondensedLight.className}`}
+              className={`  text-gray-600 cursor-pointer    ${barlowCondensedLight.className}`}
             >
               By signing up you agree to our Privacy Policy
             </Label>

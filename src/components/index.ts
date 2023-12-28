@@ -1,3 +1,4 @@
+export * from "./Advertisement";
 export * from "./cards";
 export * from "./global";
 export * from "./icons";

@@ -19,7 +19,7 @@ export const TextMarquee = ({
 }: TextMarqueeProps) => {
   return (
     <Marquee className={cn("flex my-5 gap-x-10", marqueeClassName)}>
-      {Array.from({ length }).map((v, i) => {
+      {Array.from({ length }).map((_, i) => {
         return (
           <p
             key={i}

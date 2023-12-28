@@ -13,7 +13,7 @@ export const Nav = ({ ...rest }: NavProps) => {
         <NavMenu />
         <Logo className="w-20 h-20" />
       </div>
-      <div className="flex items-center   ">
+      <div className="flex items-center     ">
         <button className="btn-red">Order now</button>
         <WishListItemBox />
         <FoodContact />

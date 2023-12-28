@@ -12,9 +12,7 @@ interface DisplayFoodItemProps
 
 export const DisplayFoodItem = ({
   bgImg,
-  price,
   title,
-  description,
   productImg,
   ...rest
 }: DisplayFoodItemProps) => {
@@ -22,7 +20,7 @@ export const DisplayFoodItem = ({
     <div
       {...rest}
       style={{ backgroundImage: `url(${bgImg.src})` }}
-      className="bg-cover bg-center w-full h-96 min-h-96      rounded-md p-2 flex flex-col justify-center text-white gap-y-4  relative     *:z-10"
+      className="bg-cover bg-center w-full h-96 min-h-96      rounded-md p-4   flex flex-col justify-center text-white gap-y-4  relative    group *:z-10"
     >
       <h4 className="text-4xl font-bold text-white">FASH FOOD MEALS</h4>
       <p>New Burger</p>
@@ -33,7 +31,7 @@ export const DisplayFoodItem = ({
       <Image
         src={productImg}
         alt={title}
-        className="absolute bottom-2 right-1 w-1/2 !z-0"
+        className="absolute bottom-2 right-1 w-7/12 !z-0 group-hover:scale-110 transition-all duration-500 ease-in-out"
       />
     </div>
   );

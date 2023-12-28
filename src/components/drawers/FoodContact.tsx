@@ -5,14 +5,7 @@ import { DetailedHTMLProps, Fragment, HTMLAttributes } from "react";
 import { RiMenuSearchFill } from "react-icons/ri";
 
 import { contactInfo } from "@/data";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/ui";
+import { Sheet, SheetContent, SheetTrigger } from "@/ui";
 
 import food1 from "@/assets/covers/burger/mae-mu-I7A_pHLcQK8-unsplash.jpg";
 import food4 from "@/assets/covers/drink/victoria-shes-8OpyEpJVgiQ-unsplash.jpg";
@@ -45,9 +38,10 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-2 my-4">
-              {allFood.map((url) => {
+              {allFood.map((url, i) => {
                 return (
                   <Image
+                    key={i}
                     src={url}
                     alt="Food Image"
                     className="rounded-lg w-full  bg-cover aspect-square "

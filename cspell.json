@@ -17,7 +17,12 @@
   ],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": [],
-  "ignoreWords": ["Swiper", "commitlint"],
+  "words": [
+    "addvetersment"
+  ],
+  "ignoreWords": [
+    "Swiper",
+    "commitlint"
+  ],
   "import": []
 }

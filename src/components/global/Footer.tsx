@@ -1,5 +1,5 @@
 import { CategoryItem, contactInfo, navItem } from "@/data";
-import { barlowCondensed, barlowCondensedLight } from "@/fonts";
+import { barlowCondensedLight } from "@/fonts";
 import { cn } from "@/utils";
 import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
