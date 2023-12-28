@@ -34,7 +34,9 @@ export const NavMenu = ({ ...rest }: NavMenuProps) => {
                 })}
               </div>
             </TabsContent>
-            <TabsContent value="category">Change your category here.</TabsContent>
+            <TabsContent value="category">
+              Change your category here.
+            </TabsContent>
           </Tabs>
         </SheetContent>
       </Sheet>

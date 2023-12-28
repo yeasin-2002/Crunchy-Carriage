@@ -5,7 +5,8 @@ import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { Logo } from "..";
 
-interface FooterProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface FooterProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Footer = ({ ...rest }: FooterProps) => {
   const year = new Date().getFullYear();
@@ -19,9 +20,8 @@ export const Footer = ({ ...rest }: FooterProps) => {
           <div>
             <Logo />
             <p className="footer-mini-title">Mirpur 14,Dhaka - 1206</p>
-            <p className="footer-mini-title">crunchy.carriage@gmail.com</p>
             <p className="footer-mini-title font-bold text-red-700 ">
-              01632227965
+              crunchy.carriage@gmail.com
             </p>
           </div>
           <div className="flex flex-1 flex-col  sm:flex-row md:justify-evenly w-full   ">

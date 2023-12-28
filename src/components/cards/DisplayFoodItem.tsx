@@ -14,16 +14,20 @@ export const DisplayFoodItem = ({ bgImg, title, productImg, ...rest }: DisplayFo
     <div
       {...rest}
       style={{ backgroundImage: `url(${bgImg.src})` }}
-      className="group relative flex h-96 min-h-96      w-full flex-col   justify-center gap-y-4 rounded-md bg-cover bg-center  p-4    text-white *:z-10"
+      className="group relative flex h-96 lg:h-[30rem] min-h-96        w-full flex-col   justify-center gap-y-4 rounded-md bg-cover bg-center  p-4    text-white *:z-10 lg:p-10"
     >
-      <h4 className="text-4xl font-bold text-white">FASH FOOD MEALS</h4>
+      <h4 className="text-4xl lg:text-5xl  font-bold text-white">
+        FASH FOOD MEALS
+      </h4>
       <p>New Burger</p>
       <p className="text-4xl font-bold text-yellow-400 ">12</p>
-      <button className="w-32 rounded-md bg-white px-4 py-2 text-black">Order now</button>
+      <button className="w-32 rounded-md bg-white px-4 py-2 text-black lg:py-4 lg:text-xl lg:px-2">
+        Order now
+      </button>
       <Image
         src={productImg}
         alt={title}
-        className="absolute bottom-2 right-1 !z-0 w-7/12 transition-all duration-500 ease-in-out group-hover:scale-110"
+        className="absolute bottom-2  right-1 !z-0  sm:w-1/2 lg:w-5/12 w-7/12 transition-all duration-500 ease-in-out group-hover:scale-110 "
       />
     </div>
   );
