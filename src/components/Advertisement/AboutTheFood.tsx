@@ -11,11 +11,11 @@ interface AboutTheFoodProps
 
 export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
   return (
-    <div {...rest} className="relative py-10">
+    <div {...rest} className="relative py-4 md:py-10">
       <div className="flex justify-center flex-col items-center   2xl:py-10  h-full w-full min-h-[35rem] bg-snowfall  text-gray-60 *:z-10 ">
         <h4
           className={cn(
-            "text-6xl font-semibold  text-center text-black/90 ",
+            "title   text-center text-black/90 ",
             barlowCondensed.className
           )}
         >
@@ -24,7 +24,7 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
         </h4>
         <p
           className={cn(
-            "my-9 text-2xl 2xl:text-4xl text-center 2xl:w-2/3   w-1/2",
+            "my-9 text-2xl 2xl:text-4xl md:text-center text-start 2xl:w-2/3  w-full  md:w-1/2 px-4",
             barlowCondensedLight.className
           )}
         >
@@ -41,7 +41,7 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
         width={1000}
         height={1000}
         alt="chicken fry"
-        className="absolute bottom-0 left-0-0 z-0 2xl:size-96 size-80"
+        className="absolute bottom-0 left-0-0 z-0 2xl:size-96 size-80 hidden md:block"
       />
       <Image
         src={burgerImg.src}

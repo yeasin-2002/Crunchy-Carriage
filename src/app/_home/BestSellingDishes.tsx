@@ -18,7 +18,7 @@ export const BestSellingDishes = ({ ...rest }: BestSellingDishesProps) => {
       <TextMarquee text="POPULAR DISHES" />
       <h2
         className={cn(
-          "text-center text-6xl font-bold text-gray-800 my-5",
+          "text-center text-4xl px-2 md:text-6xl font-bold text-gray-800 my-5",
           barlowCondensed.className
         )}
       >

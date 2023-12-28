@@ -36,7 +36,7 @@ export const TodaysMeals = ({ ...rest }: TodaysMealsProps) => {
         <br className="hidden 2xl:block" /> Minimum of 2 required.
       </p>
 
-      <button className="btn-green my-10">SHOP NOW</button>
+      <button className="btn-green my-10  px-6 py-4">SHOP NOW</button>
     </div>
   );
 };

@@ -41,7 +41,7 @@ export const BurgerOfTheMonth = ({ ...rest }: Props) => {
         src={mrBurger.src}
         width={1000}
         height={1000}
-        className="w-full h-full rounded-tr-lg"
+        className="w-full h-full rounded-tr-lg hidden md:block"
         alt="MR BURGER MAN "
         title="MR BURGER MAN"
       />

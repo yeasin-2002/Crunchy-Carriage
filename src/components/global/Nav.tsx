@@ -11,10 +11,10 @@ export const Nav = ({ ...rest }: NavProps) => {
     <div {...rest} className="flex justify-between py-3 bg-snowfall px-4">
       <div className="flex justify-between items-center gap-x-2 ">
         <NavMenu />
-        <Logo className="size-20 2xl:size-32" />
+        <Logo className="sm:size-20 size-14 2xl:size-32" />
       </div>
       <div className="flex items-center     ">
-        <button className="btn-red">Order now</button>
+        <button className="btn-red hidden sm:block">Order now</button>
         <WishListItemBox />
         <FoodContact />
       </div>

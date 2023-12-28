@@ -11,7 +11,7 @@ export const WishListItemBox = ({ ...rest }: WishListItemBoxProps) => {
   return (
     <div {...rest}>
       <Sheet>
-        <SheetTrigger className="btn-green">
+        <SheetTrigger className="btn-green ">
           <ShoppingBag className="w-6 h-6" />
         </SheetTrigger>
         <SheetContent className={`w-full h-full `}>
