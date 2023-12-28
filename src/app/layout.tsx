@@ -12,16 +12,10 @@ export const metadata: Metadata = {
     "Crunchy Carriage is a restaurant and Food delivery service. It is a web application that allows users to order food from the comfort of their homes.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={` selection:bg-crimson selection:text-white ${inter.className}`}
-      >
+      <body className={` selection:bg-crimson selection:text-white ${inter.className}`}>
         <Provider>
           <Nav />
           {children}

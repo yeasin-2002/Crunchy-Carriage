@@ -3,18 +3,11 @@
 import { ProductItem } from "@/components";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/ui";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/ui";
 import { FaListUl } from "react-icons/fa";
 import { HiOutlineViewGrid } from "react-icons/hi";
 
-interface Props
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const ShowFilteredResult = ({ ...rest }: Props) => {
   const arr = Array.from({ length: 10 });
@@ -43,10 +36,10 @@ export const ShowFilteredResult = ({ ...rest }: Props) => {
 
   return (
     <div {...rest}>
-      <div className="flex justify-between py-4 items-center px-4 ">
+      <div className="flex items-center justify-between px-4 py-4 ">
         <p>Showing 1–12 of 27 results</p>
-        <div className="flex gap-x-2 items-center">
-          <div className="flex gap-x-3 items-center">
+        <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-3">
             <FaListUl />
             <HiOutlineViewGrid />
           </div>

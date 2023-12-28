@@ -17,12 +17,7 @@
   ],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": [
-    "addvetersment"
-  ],
-  "ignoreWords": [
-    "Swiper",
-    "commitlint"
-  ],
+  "words": ["addvetersment"],
+  "ignoreWords": ["Swiper", "commitlint"],
   "import": []
 }

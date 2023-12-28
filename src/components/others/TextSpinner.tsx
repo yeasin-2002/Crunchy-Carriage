@@ -18,11 +18,7 @@ const SpinningText = ({ text }: Props) => {
 
   return (
     <div className="relative">
-      <span
-        className={`rotate-${rotation} rounded-full bg-gray-200 px-4 py-2 text-center inline-block`}
-      >
-        {text}
-      </span>
+      <span className={`rotate-${rotation} inline-block rounded-full bg-gray-200 px-4 py-2 text-center`}>{text}</span>
     </div>
   );
 };

@@ -1,20 +1,14 @@
 import React, { DetailedHTMLProps, HTMLAttributes } from "react";
 import styles from "../../styles/CirclerText.module.css";
 
-interface Props
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   children?: React.ReactNode;
   text: string;
 }
 
 export const CirclerText = ({ children, text, ...rest }: Props) => {
   return (
-    <div
-      className={
-        "relative w-48 h-48 flex items-center justify-center rounded-full"
-      }
-      {...rest}
-    >
+    <div className={"relative flex h-48 w-48 items-center justify-center rounded-full"} {...rest}>
       <div className={styles.logo}>{children}</div>
       <div className={styles.text}>
         <p>

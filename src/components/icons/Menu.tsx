@@ -1,14 +1,13 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface MenuProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface MenuProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Menu = ({ ...rest }: MenuProps) => {
   return (
-    <div {...rest} className=" flex flex-col items-center gap-y-1 group ">
-      <span className="w-6 h-[2.5px] inline-block group-hover:bg-rose-700 duration-300   bg-gray-800"></span>
-      <span className="w-4  group-hover:w-6  group-hover:bg-rose-700  duration-300 self-start transition-all  h-[2.5px]  inline-block bg-gray-800"></span>
-      <span className="w-2  group-hover:w-6 h-[2.5px]  group-hover:bg-rose-700  duration-300 self-start duration-400 inline-block bg-gray-800"></span>
+    <div {...rest} className=" group flex flex-col items-center gap-y-1 ">
+      <span className="inline-block h-[2.5px] w-6 bg-gray-800 duration-300   group-hover:bg-rose-700"></span>
+      <span className="inline-block  h-[2.5px]  w-4  self-start bg-gray-800 transition-all  duration-300  group-hover:w-6 group-hover:bg-rose-700"></span>
+      <span className="duration-400  inline-block h-[2.5px]  w-2  self-start bg-gray-800 duration-300 group-hover:w-6 group-hover:bg-rose-700"></span>
     </div>
   );
 };

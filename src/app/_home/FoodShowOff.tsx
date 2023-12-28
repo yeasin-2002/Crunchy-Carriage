@@ -1,8 +1,7 @@
 import { DisplayFoodItem } from "@/components";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface FoodShowOffProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface FoodShowOffProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 import p2 from "@/assets/covers/banner/h1_img.jpg";
 import p1 from "@/assets/covers/banner/h1_img4.jpg";

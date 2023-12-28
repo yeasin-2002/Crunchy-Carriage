@@ -3,14 +3,13 @@ import { barlowCondensed, barlowCondensedLight } from "@/fonts";
 import { cn } from "@/utils";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface TodaysMealsProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface TodaysMealsProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const TodaysMeals = ({ ...rest }: TodaysMealsProps) => {
   return (
     <div
       {...rest}
-      className="flex justify-center flex-col items-center h-full w-full min-h-[35rem]   relative text-gray-50"
+      className="relative flex h-full min-h-[35rem] w-full flex-col items-center   justify-center text-gray-50"
       style={{
         backgroundImage: `url(${cover.src})`,
         backgroundSize: "cover",
@@ -20,7 +19,7 @@ export const TodaysMeals = ({ ...rest }: TodaysMealsProps) => {
     >
       <h4
         className={cn(
-          "text-6xl font-extrabold  2xl:text-7xl text-center text-gray-50",
+          "text-center text-6xl  font-extrabold text-gray-50 2xl:text-7xl",
           barlowCondensed.className
         )}
       >
@@ -28,15 +27,15 @@ export const TodaysMeals = ({ ...rest }: TodaysMealsProps) => {
       </h4>
       <p
         className={cn(
-          "my-9  text-2xl 2xl:text-4xl text-center",
+          "my-9   text-center text-2xl 2xl:text-4xl sm:mt-16",
           barlowCondensedLight.className
         )}
       >
         *Additional charge for premium toppings.{" "}
-        <br className="hidden 2xl:block" /> Minimum of 2 required.
+        <br className="hidden sm:block" /> Minimum of 2 required.
       </p>
 
-      <button className="btn-green my-10  px-6 py-4">SHOP NOW</button>
+      <button className="btn-green     px-6 py-4">SHOP NOW</button>
     </div>
   );
 };

@@ -11,9 +11,7 @@ Crunchy Carriage is a restaurant and Food delivery service. It is a web applicat
 <img src="https://img.shields.io/badge/Source_code-gray" alt="" />
 </a>
 
-
 [![wakatime](https://wakatime.com/badge/github/yeasin-2002/Crunchy-Carriage.svg)](https://wakatime.com/badge/github/yeasin-2002/Crunchy-Carriage)
-
 
 #### Technologies
 

@@ -5,30 +5,29 @@ import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { Logo } from "..";
 
-interface FooterProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface FooterProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Footer = ({ ...rest }: FooterProps) => {
   const year = new Date().getFullYear();
   return (
     <footer
       {...rest}
-      className={cn("p-4 bg-snowfall", barlowCondensedLight.className)}
+      className={cn("bg-snowfall p-4", barlowCondensedLight.className)}
     >
-      <div className="flex  flex-col md:flex-row        items-start">
-        <div className=" flex flex-col sm:flex-row  sm:gap-x-5    md:gap-x-1 flex-1 ">
+      <div className="flex  flex-col items-start        md:flex-row">
+        <div className=" flex flex-1 flex-col  sm:flex-row    sm:gap-x-5 md:gap-x-1  ">
           <div>
             <Logo />
             <p className="footer-mini-title">Mirpur 14,Dhaka - 1206</p>
             <p className="footer-mini-title">crunchy.carriage@gmail.com</p>
-            <p className="text-red-700 font-bold footer-mini-title ">
+            <p className="footer-mini-title font-bold text-red-700 ">
               01632227965
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row  md:justify-evenly flex-1">
+          <div className="flex flex-1 flex-col  sm:flex-row md:justify-evenly w-full   ">
             <div>
               <p className="footer-subtitle">Product</p>
-              <div className="grid grid-cols-2 ">
+              <div className="grid grid-cols-2  ">
                 {CategoryItem.map((item) => {
                   return (
                     <p key={item.title} className="footer-mini-title">
@@ -64,13 +63,13 @@ export const Footer = ({ ...rest }: FooterProps) => {
           <p className="footer-mini-title">
             Saturday: <span className="text-red-700"> 8am – 12am</span>
           </p>
-          <div className="flex gap-x-2 mt-2 ">
+          <div className="mt-2 flex gap-x-2 ">
             {contactInfo.map((info) => {
               return (
                 <Link
                   key={info.name}
                   href={info.value}
-                  className="p-1 rounded-full bg-slate-200 border border-slate-800 *:size-5 "
+                  className="rounded-full border border-slate-800 bg-slate-200 p-1 *:size-5 "
                 >
                   {info.Icon}
                 </Link>
@@ -80,9 +79,9 @@ export const Footer = ({ ...rest }: FooterProps) => {
         </div>
       </div>
 
-      <p className="text-center mt-10 border-t-2 border-gray-500/40 py-2">
+      <p className="mt-10 border-t-2 border-gray-500/40 py-2 text-center">
         Copyright ©{year}
-        <span className="text-red-600 mx-1 font-medium ">Crunchy Carriage</span>
+        <span className="mx-1 font-medium text-red-600 ">Crunchy Carriage</span>
         <br /> All rights reserved
       </p>
     </footer>

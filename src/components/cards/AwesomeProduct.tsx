@@ -5,18 +5,17 @@ import Image from "next/image";
 
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface Props
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const AwesomeProduct = ({ ...rest }: Props) => {
   return (
     <div
-      className="group transition-all hover:bg-yellow-500 duration-500 bg-white  rounded-md w-full h-full p-4 min-h-[30rem] relative left-0 top-0  border border-teal-800 group-hover:translate-y-40 "
+      className="group relative left-0 top-0 h-full  min-h-[30rem] w-full rounded-md border border-teal-800 bg-white p-4 transition-all  duration-500 hover:bg-yellow-500 group-hover:translate-y-40 "
       {...rest}
     >
       <p
         className={cn(
-          "text-3xl   text-center font-bold  duration-200 group-hover:translate-y-0 translate-y-3/4 absolute h-full bottom-0 left-0 w-full  z-10 ",
+          "absolute   bottom-0 left-0  z-10 h-full w-full translate-y-3/4 text-center text-3xl font-bold duration-200  group-hover:translate-y-0 ",
           permanentMarker.className
         )}
       >

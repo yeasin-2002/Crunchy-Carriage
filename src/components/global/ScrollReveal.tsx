@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Transition,
-  Variants,
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion";
+import { Transition, Variants, motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 
 const defaultVariants = {

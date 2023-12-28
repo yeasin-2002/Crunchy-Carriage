@@ -52,10 +52,7 @@ export function FancyProduct() {
             </div>
             <div className="absolute bottom-[10%] mx-auto w-full text-center font-sans text-3xl  font-bold text-white opacity-0 transition-all group-hover:opacity-100">
               <div>
-                <a
-                  href="https://demo2.wpopal.com/fazfood/product-category/specials/"
-                  title="Specials"
-                >
+                <a href="https://demo2.wpopal.com/fazfood/product-category/specials/" title="Specials">
                   <span>Specials</span>
                 </a>
               </div>

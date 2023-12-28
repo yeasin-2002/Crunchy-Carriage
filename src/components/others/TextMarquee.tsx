@@ -10,21 +10,15 @@ interface TextMarqueeProps {
   separator?: string;
 }
 
-export const TextMarquee = ({
-  text,
-  length = 10,
-  className,
-  marqueeClassName,
-  separator = "•",
-}: TextMarqueeProps) => {
+export const TextMarquee = ({ text, length = 10, className, marqueeClassName, separator = "•" }: TextMarqueeProps) => {
   return (
-    <Marquee className={cn("flex my-5 gap-x-10", marqueeClassName)}>
+    <Marquee className={cn("my-5 flex gap-x-10", marqueeClassName)}>
       {Array.from({ length }).map((_, i) => {
         return (
           <p
             key={i}
             className={cn(
-              "marqueeTextFillColor mx-5 font-bold text-5xl capitalize ",
+              "marqueeTextFillColor mx-5 text-5xl font-bold capitalize ",
               barlowCondensed.className,
               className
             )}

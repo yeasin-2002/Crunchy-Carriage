@@ -2,35 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @layer components {
   .title {
-    @apply 2xl:text-8xl text-2xl  font-extrabold text-center;
+    @apply text-center text-2xl  font-extrabold 2xl:text-8xl;
   }
   .into-center {
     @apply flex items-center justify-center;
   }
+  .btn-mega {
+    @apply px-4 py-6;
+  }
   .btn-green {
-    @apply px-4 py-2 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm  me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+    @apply mb-2 me-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 focus:outline-none  focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
   }
   .btn-red {
-    @apply px-6 py-4 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm  me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
+    @apply mb-2 me-2 rounded-lg bg-red-700 px-6 py-4 text-sm font-medium text-white hover:bg-red-800 focus:outline-none  focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
   }
   .footer-subtitle {
-    @apply text-2xl font-bold  my-4
+    @apply my-4 text-2xl  font-bold;
   }
   .footer-mini-title {
-    @apply text-lg font-medium
+    @apply text-lg font-medium;
   }
 
   .accordion-title {
-    @apply text-2xl font-extrabold text-slate-900 border-b-2 border-gray-900/70 
+    @apply border-b-2 border-gray-900/70 text-2xl font-extrabold text-slate-900;
   }
 
   .input-area {
-    @apply w-full py-3 px-2 rounded-lg bg-snowfall outline-none border border-gray-600/50
+    @apply w-full rounded-lg border border-gray-600/50 bg-snowfall px-2 py-3 outline-none;
   }
 }
 
@@ -115,13 +115,12 @@
   -webkit-text-stroke-color: #b7b7b7;
 }
 
-
 .stack-content > * {
   grid-area: container;
 }
 
 .stack-content {
   display: grid;
-  grid-template: 'container';
+  grid-template: "container";
   isolation: isolate;
 }

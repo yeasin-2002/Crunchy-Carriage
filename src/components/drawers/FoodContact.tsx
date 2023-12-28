@@ -14,8 +14,7 @@ import food2 from "@/assets/covers/meat/alex-munsell-auIbTAcSH6E-unsplash.jpg";
 import food0 from "@/assets/covers/pizza/gallery-5.jpg";
 import food3 from "@/assets/covers/sweet/luisana-zerpa.jpg";
 
-interface FoodContactProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface FoodContactProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const FoodContact = ({ ...rest }: FoodContactProps) => {
   const year = new Date().getFullYear();
@@ -25,42 +24,34 @@ export const FoodContact = ({ ...rest }: FoodContactProps) => {
     <div {...rest}>
       <Sheet>
         <SheetTrigger>
-          <RiMenuSearchFill className="size-6 mx-3" />
+          <RiMenuSearchFill className="mx-3 size-6 " />
         </SheetTrigger>
         <SheetContent>
-          <div className="flex flex-col justify-between h-full w-full">
+          <div className="flex h-full w-full flex-col justify-between">
             <div className="space-y-4">
-              <h3 className="2xl:text-2xl text-base lg:text-lg  font-bold text-center">
+              <h3 className="text-center text-base font-bold  lg:text-lg 2xl:text-2xl">
                 WE MAKE THE BEST BURGER IN YOUR TOWN
               </h3>
-              <p className="2xl:text-xl font-medium">
-                The mouth-watering aroma of sizzling burgers now fills the
-                streets of Birmingham thanks to the passionate pursuit of three
-                brothers
+              <p className="font-medium 2xl:text-xl">
+                The mouth-watering aroma of sizzling burgers now fills the streets of Birmingham thanks to the
+                passionate pursuit of three brothers
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-2 my-4">
+            <div className="my-4 grid grid-cols-3 gap-2">
               {allFood.map((url, i) => {
                 return (
-                  <Image
-                    key={i}
-                    src={url}
-                    alt="Food Image"
-                    className="rounded-lg w-full  bg-cover aspect-square  "
-                  />
+                  <Image key={i} src={url} alt="Food Image" className="aspect-square w-full  rounded-lg bg-cover  " />
                 );
               })}
             </div>
             <div className="mt-10 ">
-              <div className="flex items-center gap-x-1 mb-3">
+              <div className="mb-3 flex items-center gap-x-1">
                 {contactInfo.map((item) => {
                   return <Fragment key={item.name}>{item.Icon}</Fragment>;
                 })}
               </div>
 
-              <p className="2xl:text-lg">
-                Copyright © {year} Crunchy Carriage.
-              </p>
+              <p className="2xl:text-lg">Copyright © {year} Crunchy Carriage.</p>
               <p className="2xl:text-lg"> All rights reserved</p>
             </div>
           </div>

@@ -8,17 +8,16 @@ import { cn } from "@/utils";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-interface BestSellingDishesProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface BestSellingDishesProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const BestSellingDishes = ({ ...rest }: BestSellingDishesProps) => {
   const arr = Array.from({ length: 10 });
   return (
-    <div {...rest} className="bg-snowfall py-4">
+    <div {...rest} className="bg-snowfall py-8 px-2">
       <TextMarquee text="POPULAR DISHES" />
       <h2
         className={cn(
-          "text-center text-4xl px-2 md:text-6xl font-bold text-gray-800 my-5",
+          "my-5 px-2 text-center text-4xl font-bold text-gray-800 md:text-6xl mt-20 mb-10",
           barlowCondensed.className
         )}
       >

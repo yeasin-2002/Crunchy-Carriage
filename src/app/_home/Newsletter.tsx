@@ -5,8 +5,7 @@ import { TextMarquee } from "@/components";
 import { barlowCondensed, barlowCondensedLight } from "@/fonts";
 import { Checkbox, Input, Label } from "@/ui";
 
-interface NewsletterProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface NewsletterProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Newsletter = ({ ...rest }: NewsletterProps) => {
   return (
@@ -17,30 +16,30 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
           JOIN FOR HOT OFFERS
         </h3>
         <p
-          className={`text-center 2xl:text-3xl text-gray-500 mt-2 ${barlowCondensedLight.className}`}
+          className={`mt-2 text-center text-gray-500 2xl:text-3xl ${barlowCondensedLight.className}`}
         >
           If we go all out… We do it well! Subscribe to the newsletter
           <br className="hidden md:block" />
           to get the most exclusive promos.
         </p>
 
-        <div className="space-y-3 mt-10">
-          <div className="flex gap-x-2 justify-center items-center  ">
+        <div className="mt-10 space-y-3">
+          <div className="flex items-center justify-center gap-x-2   ">
             <Input
-              className="w-full  md:min-w-96 py-6 flex-1  "
+              className="w-full  flex-1 py-6 md:min-w-96  "
               type="email"
               placeholder="Enter your email"
             />
-            <button className="btn-green      h-full  flex items-center gap-x-1 py-3 px-2 sm:px-3 ">
+            <button className="btn-green      flex  h-full items-center gap-x-1 px-2 py-3 sm:px-3 ">
               Subscribe
               <Send size={15} className="hidden sm:block" />
             </button>
           </div>
-          <div className="flex gap-x-2 items-center">
+          <div className="flex items-center gap-x-2">
             <Checkbox id="newsletter" className="2xl:p-4 " />
             <Label
               htmlFor="newsletter"
-              className={`  text-gray-600 cursor-pointer  2xl:text-3xl   ${barlowCondensedLight.className}`}
+              className={`  cursor-pointer text-gray-600  2xl:text-3xl   ${barlowCondensedLight.className}`}
             >
               By signing up you agree to our Privacy Policy
             </Label>
