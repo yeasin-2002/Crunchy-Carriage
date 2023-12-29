@@ -16,9 +16,7 @@ export const DisplayFoodItem = ({ bgImg, title, productImg, ...rest }: DisplayFo
       style={{ backgroundImage: `url(${bgImg.src})` }}
       className="group relative flex h-96 lg:h-[30rem] min-h-96        w-full flex-col   justify-center gap-y-4 rounded-md bg-cover bg-center  p-4    text-white *:z-10 lg:p-10"
     >
-      <h4 className="text-4xl lg:text-5xl  font-bold text-white">
-        FASH FOOD MEALS
-      </h4>
+      <h4 className="text-4xl   font-bold text-white">FASH FOOD MEALS</h4>
       <p>New Burger</p>
       <p className="text-4xl font-bold text-yellow-400 ">12</p>
       <button className="w-32 rounded-md bg-white px-4 py-2 text-black lg:py-4 lg:text-xl lg:px-2">

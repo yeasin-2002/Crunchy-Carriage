@@ -38,7 +38,7 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
           culinary industry between them, they set out on a journey to discover
           the ultimate burger.
         </p>
-        <button className="btn-green my-10 sm:px-8 sm:py-6 sm:text-xl">
+        <button className="btn-green my-10 sm:px-7 sm:py-5 sm:text-lg">
           SHOP NOW
         </button>
       </div>
@@ -47,7 +47,7 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
         width={100}
         height={100}
         alt="chicken fry"
-        className="left-0-0 absolute bottom-0 z-0 hidden  size-32  sm:left-3  sm:block  sm:px-4  md:size-40 "
+        className="absolute bottom-10 left-0 md:left-4   z-0  size-24 md:size-28 lg:size-32 "
       />
       <Image
         src={leaf.src}
