@@ -10,7 +10,7 @@ interface NewsletterProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElemen
 export const Newsletter = ({ ...rest }: NewsletterProps) => {
   return (
     <section className="bg-snowfall  py-10" {...rest}>
-      <TextMarquee text="SUBSCRIBE" className="my-10 text-5xl" />
+      <TextMarquee text="NEWSLETTER" className="my-10 text-5xl" />
       <div className="flex flex-col items-center justify-center gap-y-4  px-4 ">
         <h3
           className={`title  lg:text-6xl md:text-5xl   text-gray-dark ${barlowCondensed.className}`}
@@ -32,7 +32,7 @@ export const Newsletter = ({ ...rest }: NewsletterProps) => {
               type="email"
               placeholder="Enter your email"
             />
-            <button className="btn-green md:text-base      flex  h-full items-center gap-x-1 px-2 py-3 sm:px-3   lg:py-5">
+            <button className="btn-green md:text-base      flex  h-full items-center gap-x-1 px-2 py-3 sm:px-3   lg:py-5 lg:translate-y-1">
               Subscribe
               <Send size={15} className="hidden sm:block lg:size-6" />
             </button>

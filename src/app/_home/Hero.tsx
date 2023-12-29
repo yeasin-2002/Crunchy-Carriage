@@ -1,24 +1,75 @@
-import starImg from "@/assets/covers/banner/smoke.jpg";
-import burgerImg from "@/assets/covers/burger/bugerOnHand.jpg";
-import { Blurry } from "@/components";
+"use client";
 
+import { motion } from "framer-motion";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface HeroProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+import { barlowCondensed } from "@/fonts";
 
-export const Hero = ({ ...rest }: HeroProps) => {
+import foodImg from "@/assets/covers/pizza/pizza3D-noBg.png";
+import Image from "next/image";
+import bgVideo from "../../assets/video/coocking.mp4";
+
+interface Props
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+
+export const Hero = ({ ...rest }: Props) => {
   return (
-    <div {...rest} className="grid h-screen grid-cols-1 md:grid-cols-2">
-      <Blurry imgSrc={burgerImg} className="into-center">
-        <h2 className=" text-center text-4xl font-bold text-gray-100  lg:text-6xl">
-          THE BEST BURGER
-          <br className="md:hidden" />
-          <span className="md:hidden">IN YOUR TOWN</span>
-        </h2>
-      </Blurry>
-      <Blurry imgSrc={starImg} className="into-center hidden md:flex " wrapperClassName="hidden  md:block">
-        <h2 className="translate-y-16 text-center text-4xl font-bold  text-gray-100  lg:text-6xl">IN YOUR TOWN</h2>
-      </Blurry>
+    <div {...rest} className={"   relative w-full  min-h-full "}>
+      <div className="w-full grid grid-cols-2    place-items-center p-4 h-full  absolute top-0 left-0   bg-black/80    text-gray-100 ">
+        <div className="space-y-4">
+          <p className="text-rose-700 text-lg font-bold   px-2">
+            Hot and Special
+          </p>
+          <h2
+            className={
+              "  text-4xl lg:text-5xl font-bold text-gray-100   px-2 " +
+              barlowCondensed.className
+            }
+          >
+            THE BEST FOOD SERVICE
+            <br />
+            IN YOUR{" "}
+            {"TOWN".split("").map((car, index) => {
+              return (
+                <motion.span
+                  key={car}
+                  className="inline-block"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1 * index },
+                  }}
+                >
+                  {car}
+                </motion.span>
+              );
+            })}
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            harum nulla, cupiditate nam accusamus id rerum vel quae ea odit?
+          </p>
+          <button className="btn-green px-6   py-4">Order Now</button>
+        </div>
+        <div className="hidden md:block">
+          <Image
+            src={foodImg}
+            alt="Burger"
+            width={1000}
+            height={1000}
+            className="size-72 "
+          />
+        </div>
+      </div>
+
+      <video
+        src={bgVideo}
+        className="w-full h-full object-cover "
+        muted
+        autoPlay
+        loop
+      />
     </div>
   );
 };

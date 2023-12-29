@@ -1,12 +1,16 @@
-import { barlowCondensed, barlowCondensedLight } from "@/fonts";
-import { cn } from "@/utils";
+import Image from "next/image";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-import burgerImg from "@/assets/illustration/burger.png";
-import chickenFry from "@/assets/products/chickenFry.png";
-import Image from "next/image";
+import { barlowCondensed, barlowCondensedLight } from "@/fonts";
+import { cn } from "@/utils";
 
-interface AboutTheFoodProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+import burgerImg from "@/assets/illustration/burger.png";
+import priedRice from "@/assets/illustration/h1_vector1.png";
+import leaf from "@/assets/illustration/leaf.png";
+import pizza from "@/assets/illustration/pizza.png";
+
+interface AboutTheFoodProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
   return (
@@ -39,18 +43,32 @@ export const AboutTheFood = ({ ...rest }: AboutTheFoodProps) => {
         </button>
       </div>
       <Image
-        src={chickenFry.src}
-        width={1000}
-        height={1000}
-        alt="chicken fry"
-        className="left-0-0 absolute bottom-0 z-0 hidden  size-80  sm:left-3  sm:block sm:size-52 sm:px-4 2xl:size-96 md:size-64 "
-      />
-      <Image
         src={burgerImg.src}
         width={100}
         height={100}
         alt="chicken fry"
-        className="absolute bottom-10 right-10 z-0  size-32 "
+        className="left-0-0 absolute bottom-0 z-0 hidden  size-32  sm:left-3  sm:block  sm:px-4  md:size-40 "
+      />
+      <Image
+        src={leaf.src}
+        width={100}
+        height={100}
+        alt="chicken fry"
+        className="absolute bottom-10 right-10 z-0  size-20 "
+      />
+      <Image
+        src={pizza.src}
+        width={100}
+        height={100}
+        alt="chicken fry"
+        className="absolute top-10 right-0 md:right-4 z-0  size-24 md:size-28 lg:size-32 "
+      />
+      <Image
+        src={priedRice.src}
+        width={100}
+        height={100}
+        alt="chicken fry"
+        className="absolute top-10 left-0 md:left-4   z-0  size-24 md:size-28 lg:size-32 "
       />
     </div>
   );

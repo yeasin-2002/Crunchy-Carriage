@@ -10,6 +10,7 @@ interface MenuProps
 export const Menu = ({ childClassName, className, ...rest }: MenuProps) => {
   const commonClassName =
     "inline-block xl:h-[3px] h-[2.5px]  bg-gray-800  group-hover:bg-rose-700 group-hover:w-6  duration-300  self-start ";
+
   return (
     <p
       {...rest}

@@ -9,9 +9,7 @@
   .into-center {
     @apply flex items-center justify-center;
   }
-  .btn-mega {
-    @apply px-4 py-6;
-  }
+  
   .btn-green {
     @apply mb-2 me-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 focus:outline-none  focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
   }
