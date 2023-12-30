@@ -1,7 +1,10 @@
+import { itim } from "@/fonts";
+import { cn } from "@/utils";
 import Image, { StaticImageData } from "next/image";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-interface DisplayFoodItemProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+interface DisplayFoodItemProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   title: string;
   price: number;
   bgImg: StaticImageData;
@@ -9,7 +12,12 @@ interface DisplayFoodItemProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivE
   description?: string;
 }
 
-export const DisplayFoodItem = ({ bgImg, title, productImg, ...rest }: DisplayFoodItemProps) => {
+export const DisplayFoodItem = ({
+  bgImg,
+  title,
+  productImg,
+  ...rest
+}: DisplayFoodItemProps) => {
   return (
     <div
       {...rest}
@@ -19,7 +27,12 @@ export const DisplayFoodItem = ({ bgImg, title, productImg, ...rest }: DisplayFo
       <h4 className="text-4xl   font-bold text-white">FASH FOOD MEALS</h4>
       <p>New Burger</p>
       <p className="text-4xl font-bold text-yellow-400 ">12</p>
-      <button className="w-32 rounded-md bg-white px-4 py-2 text-black lg:py-4 lg:text-xl lg:px-2">
+      <button
+        className={cn(
+          "w-32 font-semibold rounded-md bg-white px-4 py-2 text-black lg:py-4 lg:text-xl lg:px-2 mt-2 md:mt-8  lg:mt-14 xl:mt-16 2xl:mt-28",
+          itim.className
+        )}
+      >
         Order now
       </button>
       <Image

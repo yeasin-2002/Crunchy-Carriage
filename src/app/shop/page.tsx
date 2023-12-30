@@ -10,10 +10,14 @@ interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDi
 const Shop = ({ ...rest }: Props) => {
   return (
     <div {...rest} className="bg-snowfall">
-      <Blurry wrapperClassName="min-h-72" imgSrc={bgImg} className="into-center text-4xl font-bold text-gray-50  ">
+      <Blurry
+        wrapperClassName="min-h-72"
+        imgSrc={bgImg}
+        className="into-center text-4xl font-bold text-gray-50  "
+      >
         Shop
       </Blurry>
-      <div className="flex ">
+      <div className="flex  mt-4">
         <ShopFilters className="w-64 px-4 py-2" />
         <ShowFilteredResult className="flex-1" />
       </div>

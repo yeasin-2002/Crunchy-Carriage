@@ -1,6 +1,6 @@
 import logoImg from "@/assets/Brand/logo-transparent.png";
 import { cn } from "@/utils";
-import Image, { type ImageProps } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 interface LogoProps {
