@@ -1,11 +1,14 @@
-import { navItem } from "@/data";
-import { Menu } from "@/icons";
-import { Sheet, SheetContent, SheetTrigger, Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui";
 import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+
+import { navItem } from "@/data";
+import { permanentMarker } from "@/fonts";
+import { Menu } from "@/icons";
+import { Sheet, SheetContent, SheetTrigger } from "@/ui";
 import { Logo } from "..";
 
-interface NavMenuProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface NavMenuProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const NavMenu = ({ ...rest }: NavMenuProps) => {
   return (
@@ -16,28 +19,26 @@ export const NavMenu = ({ ...rest }: NavMenuProps) => {
         </SheetTrigger>
         <SheetContent side={"left"}>
           <div className="into-center ">
-            <Logo className="w-36" />
+            <Logo className="size-36 2xl:size-52" />
           </div>
-          <Tabs defaultValue="menu" className="w-[400px] ">
-            <TabsList className="bg-transparent ">
-              <TabsTrigger value="menu">Menu</TabsTrigger>
-              <TabsTrigger value="category">category</TabsTrigger>
-            </TabsList>
-            <TabsContent value="menu">
-              <div className="mt-10 flex flex-col gap-y-4">
-                {navItem.map((item) => {
-                  return (
-                    <Link key={item.name} href={item.path}>
-                      {item.name}
-                    </Link>
-                  );
-                })}
-              </div>
-            </TabsContent>
-            <TabsContent value="category">
-              Change your category here.
-            </TabsContent>
-          </Tabs>
+          <div defaultValue="menu">
+            <div className="mt-10 flex flex-col gap-y-4 2xl:gap-y-8">
+              {navItem.map((item) => {
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.path}
+                    className={
+                      "2xl:text-2xl md:text-lg font-medium text-gray-700 hover:text-gray-900 " +
+                      permanentMarker.className
+                    }
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
         </SheetContent>
       </Sheet>
     </div>
