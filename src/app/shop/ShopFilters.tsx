@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
 
@@ -44,17 +44,15 @@ export const ShopFilters = ({ ...rest }: Props) => {
                   }}
                 >
                   <div className="min-w-6 ">
-                    <AnimatePresence>
-                      {selectedCategory === c.title && (
-                        <motion.span
-                          initial={{ opacity: 0, scale: 0.5 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 0.5 }}
-                        >
-                          <CheckCircle className="text-green-900" />
-                        </motion.span>
-                      )}
-                    </AnimatePresence>
+                    {selectedCategory === c.title && (
+                      <motion.span
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.5 }}
+                      >
+                        <CheckCircle className="text-green-900" />
+                      </motion.span>
+                    )}
                   </div>
                   <p>{c.title}</p>
                 </div>
