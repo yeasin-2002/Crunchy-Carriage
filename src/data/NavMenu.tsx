@@ -1,4 +1,4 @@
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, Settings, ShoppingCart, User } from "lucide-react";
 
 export const navItem = [
   {
@@ -20,5 +20,24 @@ export const navItem = [
     name: "Shop",
     path: "/shop",
     Icon: <HomeIcon />,
+  },
+];
+
+export const profileMenu = [
+  {
+    name: "Profile",
+    path: "/profile",
+    Icon: <User className="size-4" />,
+  },
+
+  {
+    name: "wishlist",
+    path: "profile/wishlist",
+    Icon: <ShoppingCart className="size-4" />,
+  },
+  {
+    name: "Settings",
+    path: "profile/settings",
+    Icon: <Settings className="size-4 " />,
   },
 ];
