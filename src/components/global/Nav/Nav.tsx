@@ -12,10 +12,12 @@ interface NavProps
 
 export const Nav = ({ ...rest }: NavProps) => {
   const pathName = usePathname();
+  const hiddenPaths = ["/profile", "/profile/wishlist", "/profile/settings"];
+
   const isAuth = true;
   return (
     <Fragment>
-      {pathName === "/profile" || (
+      {hiddenPaths.includes(pathName) || (
         <div {...rest} className="flex justify-between bg-snowfall px-4 py-3">
           <div className="flex items-center justify-between gap-x-2 ">
             <NavMenu />

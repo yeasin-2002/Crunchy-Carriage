@@ -25,7 +25,7 @@ export const NavProfile = ({ ...rest }: Props) => {
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <Link
-            href={"/profile"}
+            href={"/profile/settings"}
             className="cursor-pointer flex items-center gap-x-3"
           >
             <CircleUserRound className="size-5" />

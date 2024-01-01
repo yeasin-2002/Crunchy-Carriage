@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Metadata } from "next";
 import { ProfileBottomNav } from "./ProfileBottomNav";
 
 interface Props {
@@ -7,7 +9,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="min-h-screen  ">
+    <div>
       {children}
       <ProfileBottomNav />
     </div>

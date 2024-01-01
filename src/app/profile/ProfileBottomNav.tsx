@@ -11,7 +11,7 @@ export const ProfileBottomNav = ({ ...rest }: Props) => {
   return (
     <div
       {...rest}
-      className="glass-bluer absolute bottom-5 left-0 right-0 mx-auto w-1/4 px-2  flex  items-center justify-between rounded-2xl "
+      className="glass-bluer absolute bottom-5 left-0 right-0 mx-auto w-1/4 px-2  flex  items-center justify-between rounded-md"
     >
       {profileMenu.map((item) => {
         return (
