@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import { Category } from "./Category";
 import { Order } from "./Orders";
 import { Product } from "./Product";
@@ -8,6 +9,7 @@ const db = {
   Order,
   Product,
   User,
+  disconnect: mongoose.connection.close(),
 };
 
 export { Category, Order, Product, User };
