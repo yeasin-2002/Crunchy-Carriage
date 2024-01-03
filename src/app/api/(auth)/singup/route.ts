@@ -19,7 +19,7 @@ export const POST = async (req: Request) => {
       email,
       name,
       password: hashedPassword,
-      username: name?.toLocaleLowerCase().split(" ").join("."),
+      username: name?.toLocaleLowerCase()?.split(" ")?.join("."),
     });
 
     if (!newUser) return ErrorResponse(401, `Unable to create  user`);
