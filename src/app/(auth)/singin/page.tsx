@@ -9,7 +9,7 @@ const SingIn = () => {
       className=" bg-cover bg-center bg-no-repeat  relative  min-h-screen"
       style={{ backgroundImage: `url(${coverImg.src})` }}
     >
-      <form className="lg:w-1/3 w-full px-7 py-10 glass-bluer    rounded-xl  absolute top-20  lg:top-40 right-0 lg:right-10 ">
+      <form className="auth-cover-form lg:top-40 right-0 lg:right-10 ">
         <div className="space-y-5">
           <InputCombo
             title="Email"

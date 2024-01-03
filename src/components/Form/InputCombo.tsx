@@ -25,7 +25,7 @@ export const InputCombo = ({
       <label
         htmlFor={id}
         className={cn(
-          "block mb-2 text-sm font-medium text-gray-900 dark:text-white capitalize",
+          "block mb-2 text-base font-bold text-gray-900 dark:text-white capitalize",
           labelClassName
         )}
       >

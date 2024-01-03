@@ -8,7 +8,7 @@ const SingUp = () => {
       className=" min-h-screen bg-cover bg-center bg-no-repeat  relative  "
       style={{ backgroundImage: `url(${coverImg.src})` }}
     >
-      <form className="w-1/3 px-7 py-10 glass-bluer    rounded-xl  absolute top-40 left-10 ">
+      <form className="auth-cover-form top-0 lg:top-40 lg:left-10">
         <div className="space-y-5">
           <InputCombo
             title="name"
@@ -20,15 +20,19 @@ const SingUp = () => {
             type="email"
             placeholder="write your email"
           />
-          <InputCombo title="password" type="password" placeholder="*****" />
+          <InputCombo
+            title="new password"
+            type="password"
+            placeholder="*****"
+          />
 
           <button type="submit" className="btn-blue my-4">
             Sing Up
           </button>
         </div>
-        <p className="mt-10 text-sm space-x-2">
+        <p className="mt-10 space-x-2 text-base font-semibold">
           <span>All ready have an account?</span>
-          <Link className="text-blue-500" href="/singin">
+          <Link className="text-blue-700" href="/singin">
             Sing In
           </Link>
         </p>

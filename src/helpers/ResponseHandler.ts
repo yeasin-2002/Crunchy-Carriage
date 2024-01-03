@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 type successHandler = (data?: any, message?: string, status?: number) => void;
 type ErrorHandler = (status?: number, message?: string, data?: any) => void;
 
-export const successResponse: successHandler = (
+export const successResponse: successHandler = async (
   data,
   message = "success",
   status = 200
@@ -11,7 +11,7 @@ export const successResponse: successHandler = (
   return NextResponse.json({ status, message, data }, { status });
 };
 
-export const ErrorResponse: ErrorHandler = (
+export const ErrorResponse: ErrorHandler = async (
   status = 500,
   message = "Internal Server Error",
   data = null
