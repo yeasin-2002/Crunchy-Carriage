@@ -1,5 +1,7 @@
 import { connectDB } from "@/helpers";
+import chalk from "chalk";
 import mongoose from "mongoose";
+
 import { Category } from "./Category";
 import { Order } from "./Orders";
 import { Product } from "./Product";

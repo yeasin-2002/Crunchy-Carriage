@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 type successHandler = (data?: any, message?: string, status?: number) => void;
 type ErrorHandler = (status?: number, message?: string, data?: any) => void;

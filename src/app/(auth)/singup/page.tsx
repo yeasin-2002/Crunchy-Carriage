@@ -15,6 +15,7 @@ const SingUp = () => {
             type="text"
             placeholder="write your Full name"
           />
+
           <InputCombo
             title="Email"
             type="email"
